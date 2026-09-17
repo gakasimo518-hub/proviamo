@@ -1,19 +1,14 @@
-// src/repositories/userRepository.ts
-import prisma from '../config/db';
+import pool from '../config/database';
+import { User } from '../models/user';
 
-export const findAllUsers = () => prisma.user.findMany();
+export const findAllUsers = async (): Promise<User[]> => {
+  const res = await pool.query<User>('SELECT * FROM users ORDER BY id');
+  return res.rows;
+};
 
-export const findUserById = (id: number) => prisma.user.findUnique({ where: { id } });
+export const findUserById = async (id: number): Promise<User | null> => {
+  const res = await pool.query<User>('SELECT * FROM users WHERE id = $1', [id]);
+  return res.rows[0] || null;
+};
 
-export const findUserByEmail = (email: string) => prisma.user.findUnique({ where: { email } });
-
-export const createUser = (data: { name: string; email: string; password: string }) =>
-  prisma.user.create({ data });
-
-export const updateUser = (id: number, data: Partial<{ name: string; email: string; password: string }>) =>
-  prisma.user.update({ where: { id }, data });
-
-export const deleteUser = (id: number) => prisma.user.delete({ where: { id } });
-```
-
----
+export const createUser = async (name: string, email: string): Promise<User>

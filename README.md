@@ -2,9 +2,9 @@
 
 Generato automaticamente da **AI Software House**.
 
-**Stack:** Node.js, TypeScript, Express, PostgreSQL, Prisma, dotenv, Jest, Supertest
+**Stack:** Node.js, Express, TypeScript, PostgreSQL, Docker
 **Status:** COMPLETED
 
 ## Requirements
 
-- creami anche il file env dimmi e inoltre whatsapp non deve avere token anxi togli il fattore whatsapp
+- ok ricera il progetto e dammi la cartella con i file completi

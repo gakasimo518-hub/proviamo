@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--color-primary);
+  padding: var(--spacing-2);
+  color: var(--color-on-primary);
+}
+.nav {
+  display: flex;
+  gap: var(--spacing-3);
+}
+.nav-link {
+  color: var(--color-on-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-link.active {
+  text-decoration: underline;
+}
