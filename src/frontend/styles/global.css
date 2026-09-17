@@ -1,0 +1,45 @@
+/* Import component styles */
+@import './components/button.css';
+@import './components/UserList.css';
+@import './components/UserCard.css';
+
+/* Global reset and typography */
+@import '../styles/typography.css';
+@import '../styles/spacing.css';
+@import '../styles/colors.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.app-header, .app-footer {
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+  padding: var(--spacing-4);
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+  font-size: var(--font-size-2xl);
+}
+
+.nav-link {
+  color: var(--color-primary-contrast);
+  margin-left: var(--spacing-2);
+  text-decoration: none;
+}
+
+.app-main {
+  padding: var(--spacing-4);
+}
+
+.loading, .error {
+  text-align: center;
+  margin-top: var(--spacing-8);
+}
