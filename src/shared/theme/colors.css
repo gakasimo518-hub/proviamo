@@ -1,0 +1,41 @@
+/* Color palette – all colors are defined as CSS variables for easy theming */
+:root {
+  /* Primary brand colors */
+  --color-primary: #1E88E5;          /* Blue */
+  --color-primary-light: #6AB7FF;
+  --color-primary-dark: #005CB9;
+
+  /* Secondary brand colors */
+  --color-secondary: #F4511E;        /* Orange */
+  --color-secondary-light: #FF8A4D;
+  --color-secondary-dark: #B03400;
+
+  /* Status colors */
+  --color-success: #4CAF50;          /* Green */
+  --color-danger: #E53935;           /* Red */
+  --color-warning: #FB8C00;          /* Orange */
+  --color-info: #29B6F6;             /* Light Blue */
+
+  /* Neutral palette */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+
+  /* Surface and background */
+  --color-surface: var(--color-white);
+  --color-background: var(--color-gray-50);
+  --color-on-surface: var(--color-gray-900);
+  --color-on-background: var(--color-gray-900);
+}
+```
+
+---
